@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #01064a;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.quote-generator-container {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.quote-container {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.quote {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.loading {
+  color: #95a5a6;
+}
+
+.new-quote-btn, .save-quote-btn {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.new-quote-btn:hover:not(:disabled), .save-quote-btn:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.new-quote-btn:disabled, .save-quote-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.favorites-container {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.favorites-container h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.favorites-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites-container li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #f5f7fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fav-quotes-btn {
+  padding: 12px 30px;
+  background-color: #f39c12;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.fav-quotes-btn:hover {
+  background-color: #e67e22;
+}
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.new-quote-btn {
+  background-color: #3498db;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.new-quote-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+
+.save-quote-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+.fav-quotes-btn {
+  background-color: #f3d512;
+  color: #fff;
+}
+
+.fav-quotes-btn:hover {
+  background-color: #e6bf22;
+  transform: scale(1.05);
+}
+.remove-quote-btn {
+  background-color: #c21603;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.remove-quote-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+.favorites-container {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.favorites-container h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.favorites-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites-container li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #f5f7fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.quote-container {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.quote {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading {
+  color: #95a5a6;
+}
+
+
+.category-selector {
+  margin-bottom: 20px;
+}
+
+.category-label {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-right: 10px;
+}
+
+.category-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s;
+}
+
+.category-select:focus {
+  border-color: #3498db;
+}
